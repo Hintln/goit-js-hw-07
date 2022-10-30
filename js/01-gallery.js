@@ -5,3 +5,4 @@ console.log(galleryItems);
 
 
 
+const gallery = document.querySelector('.div-gallery')
