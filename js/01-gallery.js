@@ -1,5 +1,5 @@
 import { galleryItems } from './gallery-items.js';
-// Change code below this line
+// // Change code below this line
 
 
 console.log(galleryItems);
@@ -25,44 +25,43 @@ gallery.addEventListener('click', openBigPicture)
 
 function openBigPicture(e) {
     e.preventDefault()
-    if (e.taget.nodeName !== 'IMG') {
+    if (e.target.nodeName !== 'IMG') {
         return
     }
- const instance = basicLightbox.create
-     (`img 
-        src = ${e.target.dataset.source}
-        alt="${e.taget.alt})"/>`)
 
-instance.show
-}
+    const instance = basicLightbox.create(`
+    <img
+        src=${e.target.dataset.source}
+        alt="${e.target.alt}">
+    `)
+
+
+    instance.show()
+  }
     
 
+// 
+
+
+// // console.log(basicLightbox);
+
+// // const instance = basicLightbox.create(`
+// // 	<h1>Dynamic Content</h1>
+// // 	<p>You can set the content of the lightbox with JS.</p>
+// // `)
 
 
 
+// // const instance = basicLightbox.create(`
+// // 	<h1>Not closable</h1>
+// // 	<p>It's not possible to close this lightbox with a click.</p>
+// // `, {
+// // 	closable: false
+// // })
 
 
+// // const instance = basicLightbox.create(
+// // 	document.querySelector('div.gallery')
+// // )
 
-
-// console.log(basicLightbox);
-
-// const instance = basicLightbox.create(`
-// 	<h1>Dynamic Content</h1>
-// 	<p>You can set the content of the lightbox with JS.</p>
-// `)
-
-
-
-// const instance = basicLightbox.create(`
-// 	<h1>Not closable</h1>
-// 	<p>It's not possible to close this lightbox with a click.</p>
-// `, {
-// 	closable: false
-// })
-
-
-// const instance = basicLightbox.create(
-// 	document.querySelector('div.gallery')
-// )
-
-// instance.show()
+// // instance.show()
