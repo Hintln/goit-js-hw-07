@@ -1,8 +1,10 @@
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
 
-console.log(galleryItems);
 
 
+console.log(basicLightbox);
 
-const gallery = document.querySelector('.div-gallery')
+// console.log(galleryItems);
+
+// const gallery = document.querySelector('.div-gallery')
