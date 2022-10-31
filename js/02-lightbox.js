@@ -9,8 +9,11 @@ const createGallery =
 
     galleryItems.map(({ preview, original, description }) =>
         `<li>
-        <a class="gallery__item" href="large-image.jpg">
-        <img class="gallery__image" src="small-image.jpg" alt="Image description" />
+        <a class="gallery__item" 
+        href= ${original}>
+        <img class="gallery__image"
+        src=${preview}
+        alt=${description} />
         </a>
         </li>`);
 
@@ -26,5 +29,19 @@ function openBigPicture(e) {
         return
     };
 
-
+    var lightbox = new SimpleLightbox('.gallery .gallery__item', { captionsData: "alt", captionDelay: "250" });
 }
+
+
+
+
+
+
+// new SimpleLightbox('.some-element a', { /* options */ });
+
+// $('.some-element a').simpleLightbox({ /* options */ });
+
+// <div class="gallery">
+//     <a href="images/image1.jpg"><img src="images/thumbs/thumb1.jpg" alt="" title=""/></a>
+//     <a href="images/image2.jpg"><img src="images/thumbs/thumb2.jpg" alt="" title="Beautiful Image"/></a>
+// </div>
