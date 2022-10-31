@@ -15,4 +15,16 @@ const createGallery =
         </li>`);
 
 
-        
+gallery.insertAdjacentHTML('beforeend', createGallery.join(''));
+
+gallery.addEventListener('click', openBigPicture);
+
+function openBigPicture(e) {
+    
+    e.preventDefault()
+    if (e.target.nodeName !== 'IMG') {
+        return
+    };
+
+
+}

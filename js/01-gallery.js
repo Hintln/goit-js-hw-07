@@ -34,8 +34,7 @@ function openBigPicture(e) {
         src=${e.target.dataset.source}
         alt="${e.target.alt}">
     `)
-
-
+    
     instance.show()
 };
     
