@@ -27,10 +27,10 @@ function openBigPicture(e) {
     e.preventDefault()
     if (e.target.nodeName !== 'IMG') {
         return
-    };
+    }
+};
 
-    var lightbox = new SimpleLightbox('.gallery .gallery__item', { captionsData: "alt", captionDelay: "250" });
-}
+var lightbox = new SimpleLightbox('.gallery .gallery__item', { captionsData: "alt", captionDelay: "250" });
 
 
 
